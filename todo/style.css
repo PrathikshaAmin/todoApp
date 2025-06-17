@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4; /* Light background for the outer body */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.form-container {
+  background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Gradient background inside the container */
+  padding: 40px 30px; /* Padding inside the container */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white; /* Adjust text color for better contrast */
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: white; /* White text for better contrast */
+}
+
+input {
+  width: calc(100% - 20px); /* Ensure equal spacing inside the container */
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight input on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+button:focus {
+  outline: 2px solid #0056b3;
+  outline-offset: 2px;
+}
+
+.error-message {
+  color: #ff4d4d; /* Red color for error messages */
+  font-size: 14px;
+  margin-bottom: 15px; /* Add more spacing below the error message */
+  text-align: left;
+}
+
+p {
+  margin-top: 10px;
+  color: white; /* White text for better contrast */
+}
+
+a {
+  color: #ffdd57; /* Yellow link color for better visibility */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#loading {
+  font-size: 16px;
+  color: #007bff;
+  margin-top: 10px;
+  display: none; /* Initially hidden */
+}
+
